@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="main.css">
+	<title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+		<!-- score  -->
+		<div class="score__panel">
+			<div class="score__panel--title">
+				<h1>Rock <br>paper <br> Scissors</h1>
+			</div>
+			<div class="score__board">
+				<div class="score__board--label">Score</div>
+				<div class="score__board--value">
+					<h1 class="value">0</h1>
+				</div>
+			</div>
+    </div>
+    
+    <!-- game  -->
+    <div class="content">
+		<section class="game">
+			<div class="top-game">
+				<div id="paper" class="btn">
+					<span><img src="./images/icon-paper.svg" alt="imagen-paper"></span>
+				</div>
+				<div id="scissors" class="btn"><span>
+          <img src="./images/icon-scissors.svg" alt=""></span>
+				</div>
+			</div>
+			<div class="top-bottom">
+				<div id="rock" class="btn">
+					<span><img src="./images/icon-rock.svg" alt=""></span>
+				</div>
+			</div>
+		</section>
+		<!-- result -->
+		<div class="result__game">
+			<div class="result__game--player">
+				<div class="result__game--player-status ">
+					<h1>You Picked</h1>
+				</div>
+				<div id="player" class="btn">
+					<span><img src="./images/icon-paper.svg" alt="" id="user-img"></span>
+				</div>
+			</div>
+			<div class="result-title">
+				<div>
+					<h1 id="status">You win</h1>
+				</div>
+				<div class="play-again">Play Again</div>
+			</div>
+			<div class="selection ">
+				<div class="selection__status ">
+					<h1>The House Picked</h1>
+				</div>
+				<div class="selection__hidden">
+					<div id="selection">
+						<span id="game-2"><img src="images/icon-rock.svg" alt="rock" id="machine"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  <!-- rule -->
+	<div class="rules__caja">
+		<a class="rules" href="#miModal">RULES</a>
+		<div id="miModal" class="modal">
+			<div class="modal-contenido">
+				<div class="modal-header">
+					<a href="#">X</a>
+					<p>RULES</p>
+				</div>
+				<img src="./images/image-rules.svg" alt="rules">
+			</div>
+		</div>
+	</div>
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Juan Sebastian Parra Carrillo</a>.
+	</div>
+</body>
+</html>
+<script src="main.js"></script>
